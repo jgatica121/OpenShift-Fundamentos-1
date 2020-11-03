@@ -44,3 +44,31 @@
 
 ![Alt text](Imagenes/Infraestructuras-soportadas.png?raw=true "Infraestructuras soportadas")
 
+**OpenShift es capaz de automatizar la implementación de infraestructura y la implementación de productos. Esto también se conoce como Infraestructura aprovisionada por el instalador o IPI.**
+
+**OpenShift también es compatible para la instalación en una infraestructura preexistente, en la que el cliente ha configurado de antemano networking,compute, y storage. Esto se conoce como infraestructura aprovisionada por el usuario o UPI.**
+
+#### Proveedores de productos e infraestructura
+##### OpenShift 3.11
+* Compatible en cualquier lugar donde se ejecute RHEL
+* Máquinas físicas completas, infraestructura virtualizada, en nubes privadas o públicas certificadas
+* Plataformas de virtualización: Red Hat Virtualization, vSphere, Hyper-V
+* Red Hat OpenStack Platform, proveedores de nube pública certificados como Amazon, Google, Azure
+* Arquitecturas de servidor x86 e IBM Power
+
+##### OpenShift Kubernetes Engine
+* Los usuarios exploran OpenShift 4 Kubernetes Engine, no toda la plataforma
+* Funcionalidad básica de Kubernetes con un gran ecosistema de ISV
+* Disfrute de la arquitectura inmutable y segura de RHCOS
+* Appeals to DIY, *KS, or lower end
+
+## Arquitectura y conceptos
+### Host de nodo
+* OpenShift se ejecuta en RHCOS y RHEL
+* OpenShift tiene dos tipos de nodos:
+  * Workers
+  * Masters
+* Los nodos son:
+  * Instancias de RHEL o RHCOS con OpenShift instalado
+  * Workers: donde se ejecutan las aplicaciones de usuario final
+  * Masters: administrar el clúster
