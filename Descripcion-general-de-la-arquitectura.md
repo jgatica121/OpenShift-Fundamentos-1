@@ -42,5 +42,5 @@
   * IBM Power Systems, bare metal
 * Versiones futuras para admitir aún más infraestructuras
 
-![Alt text](Imagenes/Diagrama_Alto_Nivel_OpenShift.png?raw=true "Arquitectura de alto nivel de OpenShift")
+![Alt text](Imagenes/Infraestructuras-soportadas.png?raw=true "Infraestructuras soportadas")
 
