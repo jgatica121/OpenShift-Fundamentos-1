@@ -138,3 +138,19 @@
 * Agrupar objetos relacionados arbitrariamente con etiquetas
   * Ejemplo: todos los pods, servicios, controladores de replicación y configuraciones de implementación de la aplicación
 * Las etiquetas son pares clave-valor simples:
+  
+![Alt text](Imagenes/Etiquetas.png?raw=true "Arquitectura de alto nivel de OpenShift")
+
+**Las etiquetas se utilizan para organizar, agrupar o seleccionar objetos de API. Por ejemplo, puede etiquetar pods con etiquetas para que los servicios puedan usar selectores de etiquetas para identificar a qué pods utilizar como proxy.**
+
+### Nodos Masters
+* Instancias de RHCOS
+* Funciones primarias:
+  * Organice actividades en los nodos trabajadores
+  * Conozca y mantenga el estado dentro del entorno OpenShift
+* Tres maestros para alta disponibilidad
+* Las partes en azul son Kubernetes
+* Las partes en verde son OpenShift
+  * Algunos servicios de infraestructura son exclusivos de OpenShift
+  
+![Alt text](Imagenes/Nodo-Master.png?raw=true "Arquitectura de alto nivel de OpenShift")
