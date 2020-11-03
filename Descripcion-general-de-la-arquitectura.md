@@ -160,3 +160,44 @@
 **Los nodos maestros son el motor de orquestación y programación de OpenShift. Son responsables de conocer y mantener el estado del entorno OpenShift.**
 
 ### etcd
+* Estado actual y deseado en el almacén de datos que se utiliza etcdcomo almacén de valor-clave distribuido
+* etcd también contiene:
+  * Reglas RBAC
+  * Información del entorno de la aplicación
+  * Datos de usuario que no pertenecen a la aplicación
+
+![Alt text](Imagenes/etcd.png?raw=true "Arquitectura de alto nivel de OpenShift")
+
+**etcd es un componente crítico de la arquitectura OpenShift. Es el almacén de datos distribuidos de valor clave para el estado y otra información dentro del entorno OpenShift.**
+
+### Master Services - Core Kubernetes Components
+* OpenShift incluye los servicios de Kubernetes
+* Byte por byte idéntico a Kubernetes de Cloud Native Computing Foundation
+* Proporciona:
+  * Servidor de API de Kubernetes
+  * Programador
+  * Servicios de gestión de clústeres
+  
+![Alt text](Imagenes/services-kubernates.png?raw=true "Arquitectura de alto nivel de OpenShift")
+
+### Master - Infrastructure Services
+* Masters y workers colaboran
+* Se incluyen los servicios de OpenShift y Kubernetes
+* Ejecutar como vainas; orquestado por el plano de control maestro
+* Los servicios incluyen:
+  * Monitoring
+  * Logging
+  * OS tuning
+  * Software defined networking (SDN)
+  * DNS
+
+![Alt text](Imagenes/services-infra.png?raw=true "Arquitectura de alto nivel de OpenShift")
+
+### Master - API and Authentication
+* Los maestros proporcionan un único punto final de API con el que interactúan todas las herramientas y sistemas
+  * Incluye OpenShift y Kubernetes
+  * Todas las solicitudes de administración pasan por esta API
+* |Todas las solicitudes de API están encriptadas y autenticadas con SSL
+* Autorizaciones manejadas a través del control de acceso basado en roles (RBAC)
+* Maestros capaces de vincularse a sistemas de gestión de identidad externos
+  * Ejemplos: LDAP, Active Directory, proveedores de OAuth como GitHub y Google
