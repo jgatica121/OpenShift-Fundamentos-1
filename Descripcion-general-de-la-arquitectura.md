@@ -105,3 +105,12 @@
  * Los diferentes componentes, como el servidor de aplicaciones y la base de datos, generalmente no se colocan en un solo pod
  * Permite que los componentes individuales de la aplicación se escalen fácilmente horizontalmente
 * Los componentes de la aplicación están conectados por servicios
+
+**OpenShift puede consumir la mayoría de las imágenes de contenedores que cumplen con OCI. OpenShift ejecuta imágenes en contenedores envueltos por el meta objeto llamado pod.**
+
+### POD
+
+* Úselo **oc get pod** para ver los pods que se ejecutan en el entorno, generalmente su proyecto:
+  * Proyectos también llamados namespaces
+  * Algunos pods se ejecutan hasta su finalización, como los constructores y los implementadores
+  * Algunos pods continúan ejecutando la aplicación
