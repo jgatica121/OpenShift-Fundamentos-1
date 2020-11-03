@@ -25,4 +25,4 @@
 * Cumple con los requisitos de seguridad, privacidad, cumplimiento y gobernanza
 
 ### Visión general
-![Alt text](Imagenes/Diagrama_Alto_Nivel_OpenShift.png?raw=true "Title")
+![Alt text](Imagenes/Diagrama_Alto_Nivel_OpenShift.png?raw=true "Arquitectura de alto nivel de OpenShift")
