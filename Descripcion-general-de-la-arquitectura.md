@@ -114,3 +114,27 @@
   * Proyectos también llamados namespaces
   * Algunos pods se ejecutan hasta su finalización, como los constructores y los implementadores
   * Algunos pods continúan ejecutando la aplicación
+  
+  ![Alt text](Imagenes/OC-GET-PODS.png?raw=true "Arquitectura de alto nivel de OpenShift")
+
+### Servicio
+* Define un conjunto lógico de pods y una política de acceso.
+  * Proporciona una dirección IP interna permanente y un nombre de host para que otras aplicaciones utilicen mientras se crean y destruyen los pods
+*La capa de servicio conecta los componentes de la aplicación juntos
+  * Ejemplo: el servicio web front-end se conecta a la instancia de la base de datos comunicándose con su servicio
+* Los servicios permiten un equilibrio de carga interno simple entre los componentes de la aplicación
+  * OpenShift inyecta automáticamente información de servicio en contenedores en ejecución para facilitar el descubrimiento
+  
+**Un recurso de servicio es una abstracción que define un conjunto lógico de pods y una política que se utiliza para acceder a los pods.**
+
+**Cuando se crean o destruyen pods al escalar hacia arriba o hacia abajo, una dirección IP permanente o un nombre de host debe estar disponible para que otras aplicaciones se conecten. Un servicio representa un grupo de pods y proporciona la dirección IP permanente y el nombre de host para que lo utilicen otras aplicaciones.**
+
+### Etiquetas
+* Se utiliza para organizar, agrupar o seleccionar objetos API.
+  * Ejemplo: etiquetar pods con etiquetas, los servicios utilizan selectores de etiquetas para identificar los pods a los que sirven como proxy
+  * Hace posible que los servicios hagan referencia a grupos de pods
+  * Capaz de tratar pods con contenedores potencialmente diferentes como entidades relacionadas
+* La mayoría de los objetos pueden incluir etiquetas en metadatos.
+* Agrupar objetos relacionados arbitrariamente con etiquetas
+  * Ejemplo: todos los pods, servicios, controladores de replicación y configuraciones de implementación de la aplicación
+* Las etiquetas son pares clave-valor simples:
