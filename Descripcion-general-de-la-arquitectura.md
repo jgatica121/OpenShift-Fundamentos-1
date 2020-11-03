@@ -155,4 +155,8 @@
   
 ![Alt text](Imagenes/Nodo-Master.png?raw=true "Arquitectura de alto nivel de OpenShift")
 
+**Los nodos maestros se instalan solo en Red Hat Enterprise Linux CoreOS. No se pueden implementar en RHEL.**
 
+**Los nodos maestros son el motor de orquestación y programación de OpenShift. Son responsables de conocer y mantener el estado del entorno OpenShift.**
+
+### etcd
