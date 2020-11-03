@@ -23,3 +23,6 @@
 * RHCOS es compatible con FIPS
 * Lleva la plataforma Kubernetes a los centros de datos de los clientes y a la nube
 * Cumple con los requisitos de seguridad, privacidad, cumplimiento y gobernanza
+
+### Visión general
+![Alt text](Imagenes/Diagrama_Alto_Nivel_OpenShift.png?raw=true "Title")
