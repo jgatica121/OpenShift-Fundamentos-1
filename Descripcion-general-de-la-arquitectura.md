@@ -26,3 +26,20 @@
 
 ### Visión general
 ![Alt text](Imagenes/Diagrama_Alto_Nivel_OpenShift.png?raw=true "Arquitectura de alto nivel de OpenShift")
+
+
+## Proveedores de productos e infraestructura
+### Infraestructuras soportadas
+* OpenShift compatible con RHCOS y RHEL
+* Solución de nube híbrida OpenShift 4
+* Compatible con nubes públicas y privadas, así como sin sistema operativo
+* La automatización completa (IPI) es compatible con:
+  * AWS, Microsoft Azure, Google Cloud Platform
+  * Red Hat Virtualization, Red Hat OpenStack ® Platform
+* Infraestructura preexistente (UPI) compatible con:
+  * AWS, Microsoft Azure, Google Cloud Platform
+  * VMware vSphere, Red Hat OpenStack Platform, IBM Z
+  * IBM Power Systems, bare metal
+* Versiones futuras para admitir aún más infraestructuras
+
+
